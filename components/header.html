@@ -6,8 +6,7 @@
 
         <div class="header__row">
 
-            <!-- LOGO -->
-            <a class="brand" href="/" title="Главная">
+            <a class="brand" data-nav="/" href="/" title="Главная">
 
                 <div class="brand__logo" aria-hidden="true"></div>
 
@@ -18,25 +17,26 @@
 
             </a>
 
-
-            <!-- NAVIGATION -->
             <nav class="nav" aria-label="Основное меню">
-
-                <a href="/services/">Услуги</a>
-                <a href="/prices/">Цены</a>
-                <a href="/contacts/">Контакты</a>
-
+                <a data-nav="/services/" href="/services/">Услуги</a>
+                <a data-nav="/prices/" href="/prices/">Цены</a>
+                <a data-nav="/contacts/" href="/contacts/">Контакты</a>
             </nav>
 
-
-            <!-- CTA -->
             <div class="header__cta">
 
-                <a class="btn" data-tg-href href="#" rel="noopener" title="Написать в Telegram">
+                <a class="btn"
+                   data-tg-href
+                   href="#"
+                   rel="noopener"
+                   title="Написать в Telegram">
                     Telegram
                 </a>
 
-                <a class="btn btn-primary" data-phone-href href="#" title="Позвонить">
+                <a class="btn btn-primary"
+                   data-phone-href
+                   href="#"
+                   title="Позвонить">
                     Позвонить
                 </a>
 
