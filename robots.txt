@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://127.0.0.1:5500/sitemap.xml
+
+# ВАЖНО
+# Когда выложишь сайт на реальный домен
+# замени строку на:
+# Sitemap: https://твойдомен.ru/sitemap.xml
+# и добавмить про host
+# Host: твойдомен.ru

@@ -1,0 +1,132 @@
+<!-- contacts/index.html -->
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Контакты — разнорабочий Тольятти</title>
+    <meta name="description"
+        content="Контакты: телефон, Telegram и email. Работаем в Тольятти и ближайших окрестностях. Оценка по фото." />
+
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#0b1220" />
+
+    <meta property="og:title" content="Контакты — разнорабочий Тольятти" />
+    <meta property="og:description"
+        content="Телефон, Telegram и email для связи. Работаем в Тольятти и ближайших окрестностях." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://твойдомен.ru/contacts/" />
+    <meta property="og:locale" content="ru_RU" />
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Разнорабочий Тольятти",
+  "description": "Уборка участков, вывоз мусора, уборка гаражей, демонтаж и вынос в Тольятти и ближайших окрестностях.",
+  "areaServed": "Тольятти",
+  "telephone": "+7XXXXXXXXXX",
+  "email": "mail@example.com",
+  "url": "https://твойдомен.ru/contacts/",
+  "sameAs": [
+    "https://t.me/username"
+  ]
+}
+</script>
+</head>
+
+<body>
+
+    <div id="header"></div>
+
+    <main class="section">
+        <div class="container">
+
+            <div class="breadcrumbs">
+                <a href="../">Главная</a> → Контакты
+            </div>
+
+            <div class="card" style="padding:16px">
+                <h1>Контакты</h1>
+                <p>Работаем в Тольятти и ближайших окрестностях. Быстрее всего — написать в Telegram и отправить фото
+                    задачи.</p>
+
+                <p style="margin-top:12px">
+                    Телефон: <strong data-phone></strong><br />
+                    Telegram: <a data-tg-href href="#" rel="noopener">написать</a><br />
+                    Email: <a data-mail-href href="#"><span data-mail></span></a>
+                </p>
+
+                <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                    <a class="btn btn-primary" data-phone-href href="#">Позвонить</a>
+                    <a class="btn btn-green" data-tg-photo href="#" rel="noopener">Оценить по фото</a>
+                    <a class="btn" href="../prices/">Цены</a>
+                </div>
+            </div>
+
+            <div class="section"></div>
+
+            <div class="grid grid-2">
+                <div class="card" style="padding:16px">
+                    <h2>Зона выезда</h2>
+                    <ul>
+                        <li>Тольятти</li>
+                        <li>Ближайшие населённые пункты — по договорённости</li>
+                    </ul>
+                    <p style="margin-top:10px">Уточните адрес/район — скажем возможность и время выезда.</p>
+                </div>
+
+                <div class="card form">
+                    <h2>Оставить заявку</h2>
+                    <p>Оставьте телефон — свяжемся и уточним детали.</p>
+
+                    <form data-lead-form>
+                        <input type="text" name="company" tabindex="-1" autocomplete="off" style="display:none" />
+
+                        <div class="form__row">
+                            <div>
+                                <label for="contacts-name">Имя</label>
+                                <input class="input" id="contacts-name" type="text" name="name"
+                                    placeholder="Как к вам обращаться" />
+                            </div>
+                            <div>
+                                <label for="contacts-phone">Телефон *</label>
+                                <input class="input" id="contacts-phone" type="tel" name="phone" placeholder="+7 ..."
+                                    required />
+                            </div>
+                        </div>
+
+                        <div style="margin-top:10px">
+                            <label for="contacts-comment">Комментарий</label>
+                            <textarea id="contacts-comment" name="comment"
+                                placeholder="Что нужно сделать и где (район)"></textarea>
+                        </div>
+
+                        <div class="form__actions">
+                            <button class="btn btn-primary" type="submit">Отправить</button>
+                            <a class="btn btn-green" data-tg-photo href="#" rel="noopener">Оценить по фото</a>
+                        </div>
+
+                        <div class="check" style="margin-top:10px">
+                            <input type="checkbox" name="agree" id="agreeContacts" required />
+                            <label for="agreeContacts">
+                                Согласен с <a href="../privacy/">политикой конфиденциальности</a>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <div id="footer"></div>
+
+    <script src="../assets/js/layout.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

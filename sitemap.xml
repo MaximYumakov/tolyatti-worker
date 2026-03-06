@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+Когда сайт будет на реальном домене,
+замени https://твойдомен.ru на настоящий домен.
+-->
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://твойдомен.ru/</loc>
+  </url>
+
+  <url>
+    <loc>https://твойдомен.ru/services/</loc>
+  </url>
+
+  <url>
+    <loc>https://твойдомен.ru/services/uborka-uchastka/</loc>
+  </url>
+
+  <url>
+    <loc>https://твойдомен.ru/services/vyvoz-musora/</loc>
+  </url>
+
+  <url>
+    <loc>https://твойдомен.ru/services/uborka-garazha/</loc>
+  </url>
+
+  <url>
+    <loc>https://твойдомен.ru/services/demontazh-i-vynos/</loc>
+  </url>
+
+  <url>
+    <loc>https://твойдомен.ru/prices/</loc>
+  </url>
+
+  <url>
+    <loc>https://твойдомен.ru/contacts/</loc>
+  </url>
+
+  <url>
+    <loc>https://твойдомен.ru/privacy/</loc>
+  </url>
+
+</urlset>
