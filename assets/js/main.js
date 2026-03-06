@@ -1,9 +1,9 @@
 // assets/js/main.js
 (function () {
     const PHONE_PLACEHOLDER = "+7 (XXX) XXX-XX-XX";
-    const PHONE_HREF = "tel:+7XXXXXXXXXX";
-    const TG_LINK = "https://t.me/username"; // заглушка
-    const MAIL = "mail@example.com";
+    const PHONE_HREF = "tel:+79178145162";
+    const TG_LINK = "https://t.me/on_point_111?text=Здравствуйте, хочу узнать стоимость";
+    const MAIL = "on.point.1@yandex.ru";
 
     function applyContacts(root = document) {
         root.querySelectorAll("[data-phone]").forEach(el => {
