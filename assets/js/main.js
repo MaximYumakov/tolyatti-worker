@@ -2,7 +2,7 @@
 (function () {
     const PHONE_PLACEHOLDER = "+7 (917) 814-51-62";
     const PHONE_HREF = "tel:+79178145162";
-    const TG_LINK = "https://t.me/on_point_111?text=Здравствуйте, хочу узнать стоимость";
+    const TG_LINK = "https://t.me/on_point_111";
     const MAIL = "on.point.1@yandex.ru";
 
     function applyContacts(root = document) {
