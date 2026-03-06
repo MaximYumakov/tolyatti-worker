@@ -1,46 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!--
-Когда сайт будет на реальном домене,
-замени https://твойдомен.ru на настоящий домен.
+Sitemap для GitHub Pages.
+
+Когда сайт будет перенесён на домен,
+замените:
+https://maximyumakov.github.io/tolyatti-worker
+
+на
+
+https://твойдомен.ru
 -->
 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://твойдомен.ru/</loc>
+    <loc>https://maximyumakov.github.io/tolyatti-worker/</loc>
   </url>
 
   <url>
-    <loc>https://твойдомен.ru/services/</loc>
+    <loc>https://maximyumakov.github.io/tolyatti-worker/services/</loc>
   </url>
 
   <url>
-    <loc>https://твойдомен.ru/services/uborka-uchastka/</loc>
+    <loc>https://maximyumakov.github.io/tolyatti-worker/services/uborka-uchastka/</loc>
   </url>
 
   <url>
-    <loc>https://твойдомен.ru/services/vyvoz-musora/</loc>
+    <loc>https://maximyumakov.github.io/tolyatti-worker/services/vyvoz-musora/</loc>
   </url>
 
   <url>
-    <loc>https://твойдомен.ru/services/uborka-garazha/</loc>
+    <loc>https://maximyumakov.github.io/tolyatti-worker/services/uborka-garazha/</loc>
   </url>
 
   <url>
-    <loc>https://твойдомен.ru/services/demontazh-i-vynos/</loc>
+    <loc>https://maximyumakov.github.io/tolyatti-worker/services/demontazh-i-vynos/</loc>
   </url>
 
   <url>
-    <loc>https://твойдомен.ru/prices/</loc>
+    <loc>https://maximyumakov.github.io/tolyatti-worker/prices/</loc>
   </url>
 
   <url>
-    <loc>https://твойдомен.ru/contacts/</loc>
+    <loc>https://maximyumakov.github.io/tolyatti-worker/contacts/</loc>
   </url>
 
   <url>
-    <loc>https://твойдомен.ru/privacy/</loc>
+    <loc>https://maximyumakov.github.io/tolyatti-worker/privacy/</loc>
   </url>
 
 </urlset>
