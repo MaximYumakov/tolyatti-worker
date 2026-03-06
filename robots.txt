@@ -1,11 +1,14 @@
+# robots.txt для GitHub Pages
+
 User-agent: *
 Allow: /
 
-Sitemap: http://127.0.0.1:5500/sitemap.xml
+# Sitemap для текущего размещения
+Sitemap: https://maximyumakov.github.io/tolyatti-worker/sitemap.xml
+
 
 # ВАЖНО
-# Когда выложишь сайт на реальный домен
-# замени строку на:
+# Когда сайт будет на реальном домене,
+# замените строку Sitemap на:
+#
 # Sitemap: https://твойдомен.ru/sitemap.xml
-# и добавмить про host
-# Host: твойдомен.ru
