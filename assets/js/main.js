@@ -2,7 +2,7 @@
 (function () {
     const PHONE_PLACEHOLDER = "+7 (917) 814-51-62";
     const PHONE_HREF = "tel:+79178145162";
-    const TG_LINK = "https://t.me/on_point_111";
+    const VK_LINK = "https://vk.com/your_page"; // заменить, когда будет страница VK
     const MAIL = "on.point.1@yandex.ru";
 
     function applyContacts(root = document) {
@@ -15,7 +15,7 @@
         });
 
         root.querySelectorAll("[data-tg-href]").forEach(el => {
-            el.setAttribute("href", TG_LINK);
+            el.setAttribute("href", VK_LINK);
         });
 
         root.querySelectorAll("[data-mail]").forEach(el => {
@@ -67,13 +67,8 @@
         });
     }
 
-    function openTelegramPhotoRequest() {
-        const page = document.title || "Сайт";
-        const text = encodeURIComponent(
-            `Здравствуйте! Нужна помощь: ${page}. Город: Тольятти. Прикрепляю фото, подскажите стоимость.`
-        );
-
-        window.open(`${TG_LINK}?text=${text}`, "_blank");
+    function openSocialRequest() {
+        window.open(VK_LINK, "_blank");
     }
 
     document.addEventListener("DOMContentLoaded", () => {
@@ -82,10 +77,10 @@
     });
 
     document.addEventListener("click", (e) => {
-        const tgPhotoBtn = e.target.closest("[data-tg-photo]");
-        if (tgPhotoBtn) {
+        const socialBtn = e.target.closest("[data-tg-photo]");
+        if (socialBtn) {
             e.preventDefault();
-            openTelegramPhotoRequest();
+            openSocialRequest();
         }
     });
 
