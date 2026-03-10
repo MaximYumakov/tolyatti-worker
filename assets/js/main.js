@@ -2,7 +2,7 @@
 (function () {
     const PHONE_PLACEHOLDER = "+7 (917) 814-51-62";
     const PHONE_HREF = "tel:+79178145162";
-    const VK_LINK = "https://vk.com/your_page"; // заменить, когда будет страница VK
+    const VK_LINK = "https://vk.com/id1104069924";
     const MAIL = "on.point.1@yandex.ru";
 
     function applyContacts(root = document) {

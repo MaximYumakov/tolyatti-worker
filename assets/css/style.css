@@ -129,7 +129,7 @@ ol {
 }
 
 .btn {
-    display: inline-flex;   
+    display: inline-flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
@@ -943,5 +943,120 @@ details p {
 
     .footer {
         padding-bottom: 24px;
+    }
+
+    /* =========================================
+   FLOATING ACTIONS (DESKTOP CALL + VK)
+   ========================================= */
+
+    .floating-actions {
+        position: fixed;
+        right: 24px;
+        bottom: 24px;
+        z-index: 50;
+        display: none;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* CALL BUTTON */
+
+    .floating-call {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 14px 20px;
+        border-radius: 999px;
+
+        background: linear-gradient(180deg, #ffb347, #ff8c2f);
+        color: #fff;
+
+        font-weight: 800;
+        font-size: 15px;
+
+        border: 1px solid rgba(255, 140, 47, 0.28);
+
+        box-shadow:
+            0 14px 30px rgba(255, 140, 47, 0.35);
+
+        animation: callPulse 1.8s infinite;
+
+        transition: transform .15s ease, box-shadow .2s ease;
+    }
+
+    .floating-call:hover {
+        transform: translateY(-2px);
+    }
+
+    /* VK BUTTON */
+
+    .floating-vk {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 12px 18px;
+        border-radius: 999px;
+
+        background: linear-gradient(180deg, #45cf8d, #2fb877);
+        color: #fff;
+
+        font-weight: 700;
+        font-size: 14px;
+
+        border: 1px solid rgba(47, 184, 119, 0.25);
+
+        box-shadow:
+            0 12px 24px rgba(47, 184, 119, 0.25);
+
+        transition: transform .15s ease;
+    }
+
+    .floating-vk:hover {
+        transform: translateY(-2px);
+    }
+
+    /* PULSE ANIMATION */
+
+    @keyframes callPulse {
+
+        0% {
+            box-shadow:
+                0 14px 30px rgba(255, 140, 47, 0.35),
+                0 0 0 0 rgba(255, 140, 47, 0.35);
+        }
+
+        70% {
+            box-shadow:
+                0 14px 30px rgba(255, 140, 47, 0.35),
+                0 0 0 18px rgba(255, 140, 47, 0);
+        }
+
+        100% {
+            box-shadow:
+                0 14px 30px rgba(255, 140, 47, 0.35),
+                0 0 0 0 rgba(255, 140, 47, 0);
+        }
+    }
+
+    /* SHOW ON DESKTOP */
+
+    @media (min-width:1024px) {
+
+        .floating-actions {
+            display: flex;
+        }
+
+    }
+
+    /* HIDE ON MOBILE */
+
+    @media (max-width:767px) {
+
+        .floating-actions {
+            display: none !important;
+        }
+
     }
 }
