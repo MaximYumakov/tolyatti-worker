@@ -11,4 +11,4 @@ Sitemap: https://maximyumakov.github.io/tolyatti-worker/sitemap.xml
 # Когда сайт будет на реальном домене,
 # замените строку Sitemap на:
 #
-# Sitemap: https://твойдомен.ru/sitemap.xml
+# Sitemap: https://maximyumakov.github.io/tolyatti-worker/sitemap.xml
