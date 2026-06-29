@@ -672,6 +672,14 @@ details p {
     border-bottom: 1px solid rgba(31, 42, 55, 0.08);
 }
 
+.case-card__media img {
+    width: 100%;
+    height: 100%;
+    min-height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
 .case-card__media--after {
     background: linear-gradient(180deg, #dff1e8, #eef8f3);
 }
