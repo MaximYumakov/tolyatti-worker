@@ -121,20 +121,19 @@
         const comment = getFieldValue(form, "comment") || "Без комментария";
 
         formData.append("access_key", WEB3FORMS_ACCESS_KEY);
-        formData.append("subject", "Новая заявка с сайта worker-tlt.ru");
+        formData.append("subject", "New lead from worker-tlt.ru");
         formData.append("from_name", "worker-tlt.ru");
 
-        formData.append("Имя", name);
-        formData.append("Телефон", phone);
-        formData.append("Телефон для звонка", `+${phoneDigits}`);
-        formData.append("Услуга", service);
-        formData.append("Комментарий", comment);
-        formData.append("Страница", window.location.href);
-        formData.append("Дата и время", new Date().toLocaleString("ru-RU"));
+        formData.append("Name", name);
+        formData.append("Phone", phone);
+        formData.append("Call phone", `+${phoneDigits}`);
+        formData.append("Service", service);
+        formData.append("Comment", comment);
+        formData.append("Page", window.location.href);
+        formData.append("Date", new Date().toLocaleString("ru-RU"));
 
         return formData;
     }
-
     async function sendLead(form, phoneDigits) {
         const formData = buildWeb3FormsData(form, phoneDigits);
 
